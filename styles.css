@@ -858,6 +858,12 @@ a {
     width: calc(100vw - 32px);
   }
 
+  /* Hero fills the full viewport on mobile */
+  .panel--hero {
+    min-height: 100vh;    /* fallback */
+    min-height: 100dvh;   /* accounts for mobile browser UI chrome */
+  }
+
   .hero__content {
     left: 24px;
     width: calc(100vw - 48px);
